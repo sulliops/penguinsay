@@ -1,0 +1,6 @@
+#!/bin/bash
+# post-removal script
+
+# Remove linux-exploit-suggester
+TARGET_DIR = "/usr/share/linux-exploit-suggester"
+rm -r $TARGET_DIR

@@ -1,0 +1,6 @@
+#!/bin/bash
+# post-installation script
+
+# Enable and start the vulnreport daemon
+systemctl enable vulnreport.service
+systemctl start vulnreport.service

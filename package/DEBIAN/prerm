@@ -1,0 +1,6 @@
+#!/bin/bash
+# pre-removal script
+
+# Stop and disable vulnreport daemon
+systemctl stop vulnreport.service
+systemctl disable vulnreport.service

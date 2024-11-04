@@ -1,0 +1,10 @@
+[Unit]
+Description=Vulnerability Report Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/vulnreport
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
