@@ -6,8 +6,8 @@ apt update
 apt install -y wget
 
 # Download linux-exploit-suggester and place it /usr/share/linux-exploit-suggester
-TARGET_DIR = "/usr/share/linux-exploit-suggester"
-mkdir -p $TARGET_DIR
-wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O $TARGET_DIR/les.sh
+TARGET_DIR="/usr/share/linux-exploit-suggester"
+mkdir -p ${TARGET_DIR}
+wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O ${TARGET_DIR}/les.sh
 # Make the script executable
-chmod +x $TARGET_DIR/les.sh
+chmod +x ${TARGET_DIR}/les.sh
