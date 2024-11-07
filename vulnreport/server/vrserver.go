@@ -28,10 +28,9 @@ func handleConnection(conn net.Conn) {
 		if err == io.EOF {
 			data += msg
 			// Call helper goroutine to save received data to file
-			saveReport(addr, data)
-		}
-		// Error check reader
-		if err != nil {
+			go saveReport(addr, data)
+			return
+		} else if err != nil {
 			log.Fatal(err)
 			continue
 		}
