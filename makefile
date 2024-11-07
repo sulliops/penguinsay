@@ -15,6 +15,10 @@ binclean:
 # Compile package binaries and move to appropriate directories
 package: vrclient
 	cp vulnreport/vrclient penguinsay_1.0-1/usr/bin/vulnreport
+	chmod 755 penguinsay_1.0-1/DEBIAN/preinst
+	chmod 755 penguinsay_1.0-1/DEBIAN/postinst
+	chmod 755 penguinsay_1.0-1/DEBIAN/prerm
+	chmod 755 penguinsay_1.0-1/DEBIAN/postrm
 	dpkg-deb --build penguinsay_1.0-1
 
 # Remove binaries from package directory
