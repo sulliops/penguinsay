@@ -13,12 +13,13 @@ binclean:
 	cd vulnreport && rm vrclient vrserver
 
 # Compile package binaries and move to appropriate directories
-package: vrclient vrserver
-	cp vulnreport/vrclient package/usr/bin/vulnreport
+package: vrclient
+	cp vulnreport/vrclient penguinsay_1.0-1/usr/bin/vulnreport
+	dpkg-deb --build penguinsay_1.0-1
 
 # Remove binaries from package directory
 packclean:
-	rm package/usr/bin/*
+	rm penguinsay_1.0-1/usr/bin/*
 
 # Remove all binaries
 clean: binclean packclean

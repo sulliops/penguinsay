@@ -2,8 +2,8 @@
 # pre-installation script
 
 # Make sure wget is installed
-apt update
-apt install -y wget
+#apt update
+#apt install -y wget
 
 # Download linux-exploit-suggester and place it /usr/share/linux-exploit-suggester
 TARGET_DIR="/usr/share/linux-exploit-suggester"

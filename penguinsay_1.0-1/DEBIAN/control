@@ -1,0 +1,8 @@
+Package: penguinsay
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: i386
+Depends: wget
+Maintainer: Svetlana Drachova <sdracho@clemson.edu>
+Description: Like cowsay but with Tux!
