@@ -8,6 +8,10 @@ vrclient:
 vrserver:
 	cd vulnreport && go build -o vrserver ./server
 
+# Run vulnreport server binary
+run: vrserver
+	cd vulnreport && ./vrserver
+
 # Remove application binaries
 binclean:
 	cd vulnreport && rm vrclient vrserver
