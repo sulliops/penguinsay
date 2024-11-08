@@ -20,6 +20,7 @@ binclean:
 package: vrclient
 	cp vulnreport/vrclient penguinsay_1.0-1/usr/bin/vulnreport
 	cp penguinsay/* penguinsay_1.0-1/usr/share/penguinsay
+	chmod 755 penguinsay_1.0-1/DEBIAN
 	chmod 755 penguinsay_1.0-1/DEBIAN/preinst
 	chmod 755 penguinsay_1.0-1/DEBIAN/postinst
 	chmod 755 penguinsay_1.0-1/DEBIAN/prerm
