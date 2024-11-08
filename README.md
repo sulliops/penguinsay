@@ -25,7 +25,7 @@ Then, run penguinsay like so:
 penguinsay
 ```
 
---
+----
 
 The [makefile](makefile) includes a number of targets for compiling vulnreport (requires [installing Go](https://go.dev/doc/install)), running the vulnreport server, and packaging the Debian package:
 
