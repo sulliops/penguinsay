@@ -1,0 +1,5 @@
+#!/bin/bash
+# Executable wrapper script for penguinsay
+
+# Call penguinsay main script
+/usr/bin/env python3 /usr/share/penguinsay/__main__.py "$@"
