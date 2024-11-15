@@ -3,6 +3,3 @@
 
 # Remove linux-exploit-suggester
 rm -r /usr/share/linux-exploit-suggester
-
-# Remove leftover penguinsay files
-rm -r /usr/share/penguinsay
